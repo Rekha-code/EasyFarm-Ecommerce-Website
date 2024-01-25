@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Order</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.store.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript"
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="nav-bar" class="navbar-menu">
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <h2 class="logo"><span style="color: green;">Farm</span>
+                <sapn style="color: crimson;">Easy</sapn>
+            </h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            </div>
+        </nav>
+    </section>
+    <div id="site">
+        <header id="masthaed"></header>
+        <div id="content">
+            <h2 class="feature">Checkout</h2>
+            <table id="checkout-cart" class="shopping-cart">
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="pricing">
+                <p id="shipping">
+                    <strong>Shipping</strong>:
+                    <span id="sshipping"></span>
+                </p>
+                <p id="sub-total">
+                    <strong>Total</strong>:
+                    <span id="stotal"></span>
+                </p>
+            </div>
+            <div id="user-details">
+                <h2 class="feature">Your Data</h2>
+                <div id="user-details-content"></div>
+            </div>
+            <form id="paypal-form" action="" method="post">
+                <input type="hidden" name="cmd" value="_cart"/>
+                <input type="hidden" name="upload" value="1">
+                <input type="hidden" name="business" value="">
+                <input type="hidden" name="currency_code" value="">
+                <input type="submit" id="paypal-btn" style="background-color: green;color: #fff;" class="btn read-btn" value="Pay with PayPal">
+            </form>
+            <footer id="site-info">
+				Copyright &copy; FarmEasy 2023 <br> Made with &#10084;&#65039; By Rekha Gorde
+			</footer>
+
+</body>
+</html>
